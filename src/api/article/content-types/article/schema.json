@@ -90,6 +90,17 @@
           "localized": false
         }
       }
+    },
+    "sources": {
+      "type": "component",
+      "repeatable": true,
+      "required": false,
+      "component": "shared.sources",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }

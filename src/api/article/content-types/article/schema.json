@@ -75,20 +75,21 @@
         "shared.rich-text"
       ]
     },
-    "pinned": {
-      "type": "boolean",
-      "default": false,
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
       "required": true,
       "component": "shared.seo"
+    },
+    "readingTime": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }

@@ -78,7 +78,7 @@
     "seo": {
       "type": "component",
       "repeatable": false,
-      "required": true,
+      "required": false,
       "component": "shared.seo"
     },
     "readingTime": {

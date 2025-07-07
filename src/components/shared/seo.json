@@ -8,19 +8,33 @@
   },
   "options": {},
   "attributes": {
-    "metaTitle": {
-      "type": "string",
-      "required": true
-    },
-    "metaDescription": {
+    "ogTitle": {
       "type": "text",
       "required": true
     },
-    "shareImage": {
+    "ogDescription": {
+      "type": "text",
+      "required": true
+    },
+    "ogImage": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ogType": {
+      "type": "text",
+      "required": true
+    },
+    "ogUrl": {
+      "type": "text",
+      "required": true
+    },
+    "keywords": {
+      "type": "text",
+      "required": true
     }
   }
 }

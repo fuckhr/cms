@@ -10,19 +10,35 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
   "attributes": {
     "name": {
-      "type": "string"
+      "type": "text",
+      "required": true
     },
     "slug": {
-      "type": "uid"
+      "type": "uid",
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "articles": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::article.article",
-      "mappedBy": "category"
+      "mappedBy": "category",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     },
     "description": {
       "type": "text"

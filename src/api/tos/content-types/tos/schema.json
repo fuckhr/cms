@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "tos",
+  "info": {
+    "singularName": "tos",
+    "pluralName": "toss",
+    "displayName": "TOS",
+    "name": "tos",
+    "description": "Term of Service"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "required": true,
+      "component": "shared.rich-text"
+    }
+  }
+}

@@ -20,6 +20,10 @@
       "type": "text",
       "required": true
     },
+    "title": {
+      "type": "text",
+      "required": true
+    },
     "slug": {
       "type": "uid",
       "required": true,
@@ -33,7 +37,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::article.article",
-      "mappedBy": "category",
+      "mappedBy": "categories",
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -41,7 +45,8 @@
       }
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true
     }
   }
 }

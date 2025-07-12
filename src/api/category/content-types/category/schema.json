@@ -20,10 +20,6 @@
       "type": "text",
       "required": true
     },
-    "title": {
-      "type": "text",
-      "required": true
-    },
     "slug": {
       "type": "uid",
       "required": true,
